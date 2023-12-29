@@ -33,11 +33,13 @@ Kaip matome iš rezultatų lentelės, tikslias prognozes (mažiausia RMSE (vidut
 
 Pateikta rezultatų lentelė suteikia įžvalgų apie tai, kaip įvairūs hiperparametrai veikia LSTM neuroninio tinklo modelio tikslumą laikinių sekų prognozavimo užduotyje. Pagrindinės išvados yra šios:
 
- Eksperimentuojant pavyko nustatyti tokias priklausomybes:
+Eksperimentuojant pavyko nustatyti tokias priklausomybes:
 * Batch size - neturėjo didelės įtakos, nes duomenų masyvas santykinai mažas ir mokymosi laikas nebuvo iššūkiu.
 * Hidden size - turėjo nemažai įtakos modeliui. Bandžiau didinti paslėptų sluoksnių dydį, tam kad modelis geriau "pagautų" staigius sekų pokyčius.
 * Number of layers - stipriai blogino modelio RMSE, nesu tikras kodėl, greičiausiai dėl mažo duomenų kiekio.
 * Learning rate - neturėjo didelės įtakos, nes resursai buvo pakankami, mokymasis vyko greitai ir duomenų buvo mažai. Jeigų būtų daugiau laiko, būtų įdomu pažiūrėti kaip keičiasi modelio RMSE keičiant optimizavimo algoritmus (dabar buvo naudojamas Adam).
 * Number of epochs - turėjo įtaka, nes mokymasis nebuvo stabdomas (nebent žmogaus), kai atsirasdavo overfitting'as.
 
-Šios išvados pabrėžia hiperparametrų derinimo svarbą siekiant optimalaus modelio tiksulmo.
+Šios išvados pabrėžia hiperparametrų derinimo svarbą siekiant optimalaus modelio tiksulmo. 
+
+Kadangi naudotas Python kodas buvo ne mano, tai jį į GitHub nekeliau ir pateikiau tik MS Teams įkeltame ZIP archive (kodas beveik nemodifikuotas).
